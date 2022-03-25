@@ -1,0 +1,7 @@
+{
+  "name": "DND Light",
+  "build": {
+    "dockerfile": "./Dockerfile"
+  },
+  "extensions": ["esbenp.prettier-vscode"]
+}
