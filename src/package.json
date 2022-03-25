@@ -2,5 +2,8 @@
   "name": "dnd-light",
   "version": "1.0.0",
   "private": true,
-  "repository": "git@github.com:gilde-der-nacht/dnd-light.gildedernacht.ch.git"
+  "repository": "git@github.com:gilde-der-nacht/dnd-light.gildedernacht.ch.git",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0"
+  }
 }
