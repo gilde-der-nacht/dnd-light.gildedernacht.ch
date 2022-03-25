@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "repository": "git@github.com:gilde-der-nacht/dnd-light.gildedernacht.ch.git",
+  "scripts": {
+    "dev": "ELEVENTY_ENV=development eleventy --serve",
+    "build": "eleventy",
+    "debug": "DEBUG=Eleventy* yarn build"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0"
   }
