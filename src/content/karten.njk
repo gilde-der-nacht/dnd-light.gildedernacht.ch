@@ -1,0 +1,9 @@
+<h1>Karten</h1>
+
+<ul role="list">
+    {%- for karte in karten -%}
+    <li>
+        {{ karte | dump }}
+    </li>
+    {%- endfor -%}
+</ul>
