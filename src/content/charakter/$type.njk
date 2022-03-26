@@ -1,0 +1,20 @@
+---
+pagination:
+    data: charakter
+    size: 1
+    alias: id
+permalink: "charakter/{{ id | slug }}.html"
+eleventyComputed:
+    title: "{{ charakter[id].class }}"
+---
+
+<h1>{{ charakter[id].klasse }}</h1>
+
+{{ charakter[id] | dump }}
+<ul>
+{% for karte in karten %}
+    {% if karte.charakterTag === id %}
+        <li>{{ karte | dump }}</li>
+    {% endif %}
+{% endfor %}
+</ul>

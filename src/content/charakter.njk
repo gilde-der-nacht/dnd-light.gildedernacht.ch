@@ -1,0 +1,9 @@
+<h1>Liste der Charakter</h1>
+
+<ul role="list">
+    {%- for _, char in charakter -%}
+    <li>
+        <a href="/charakter/{{char.id}}.html">{{char.klasse}}</a>
+    </li>
+    {%- endfor -%}
+</ul>

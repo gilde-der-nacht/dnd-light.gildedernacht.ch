@@ -1,0 +1,38 @@
+[
+    {
+        "titel": "Dunkelsicht",
+        "quantitaet": 0,
+        "beschreibung": "Da du an zwielichtige Wälder und den Nachthimmel gewöhnt bist, besitzt du überlegene Sicht sowohl in Dunkelheit als auch in dämmrigem Licht. Du kannst dämmriges Licht im Umkreis von 18 m so behandeln, als wäre es helles Licht. Dunkelheit wird im Umkreis von 18 m wie dämmriges Licht behandelt. Allerdings kannst du im Dunkeln keine Farben erkennen, nur Graustufen.",
+        "charakterTag": "waldlaufer"
+    },
+    {
+        "titel": "Deckmantel der Wildnis",
+        "quantitaet": 0,
+        "beschreibung": "Du kannst versuchen, dich zu verstecken, obwohl du nur von Blattwerk, starkem Regen, fallendem Schnee, Nebel oder anderen natürlichen Phänomenen leicht verschleiert wirst.",
+        "charakterTag": "waldlaufer"
+    },
+    {
+        "titel": "Bevorzugtes Gelände: Küste",
+        "quantitaet": 0,
+        "beschreibung": "Wenn du einen Wurf auf Weisheit oder Intelligenz im Zusammenhang mit deinem bevorzugten Gelände ablegen musst,erhältst du +2 auf deinen Wurf.",
+        "charakterTag": "waldlaufer"
+    },
+    {
+        "titel": "Langbogen + Kampfstil: Bogenschiessen",
+        "quantitaet": 0,
+        "beschreibung": "Angriff: 1W20 + 7 \n Schaden: 1W8 + 3 \n Reichweite: 45m (180m mit Nachteil)",
+        "charakterTag": "waldlaufer"
+    },
+    {
+        "titel": "Kurzschwert",
+        "quantitaet": 0,
+        "beschreibung": "Angriff: 1W20 + 5 \n Schaden: 1W6 + 3",
+        "charakterTag": "waldlaufer"
+    },
+    {
+        "titel": "Erzfeind: Humanoide",
+        "quantitaet": 0,
+        "beschreibung": "Du bist bei Würfen auf Überlebenskunst im Vorteil, wenn es darum geht, deine Erzfeinde aufzuspüren, ausserdem bei Würfen auf Intelligenz, wenn es darum geht, dich an Informationen über deine Erzfeinde zu erinnern.",
+        "charakterTag": "waldlaufer"
+    }
+]
