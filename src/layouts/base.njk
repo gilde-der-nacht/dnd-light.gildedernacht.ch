@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,27 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
   <title>{{ title + ' | ' if title }}DND Light | Gilde der Nacht</title>
 </head>
-<body class="content">
-  {{ content | safe }}
+
+<body>
+  <div class="container">
+    <div class="content">
+      {% if page.filePathStem !== "/index" %}
+      <section class="section">
+        <a href="/">
+          <- Startseite</a>
+      </section>
+      {% endif %}
+      <section class="section">
+        {{ content | safe }}
+      </section>
+      {% if page.filePathStem !== "/index" %}
+      <section class="section">
+        <a href="/">
+          <- Startseite</a>
+      </section>
+      {% endif %}
+    </div>
+  </div>
 </body>
+
 </html>
