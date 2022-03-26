@@ -9,26 +9,34 @@
   <title>{{ title + ' | ' if title }}DND Light | Gilde der Nacht</title>
 </head>
 
-<body>
-  <div class="container">
-    <div class="content">
-      {% if page.filePathStem !== "/index" %}
-      <section class="section">
-        <a href="/">
-          <- Startseite</a>
-      </section>
-      {% endif %}
-      <section class="section">
-        {{ content | safe }}
-      </section>
-      {% if page.filePathStem !== "/index" %}
-      <section class="section">
-        <a href="/">
-          <- Startseite</a>
-      </section>
-      {% endif %}
+<body style="min-height: 100vh; display: grid; grid-template-rows: 1fr max-content;">
+  <div>
+    <div class="container">
+      <div class="content">
+        {% if page.filePathStem !== "/index" %}
+        <section class="section">
+          <a href="/">
+            <- Startseite</a>
+        </section>
+        {% endif %}
+        <section class="section">
+          {{ content | safe }}
+        </section>
+        {% if page.filePathStem !== "/index" %}
+        <section class="section">
+          <a href="/">
+            <- Startseite</a>
+        </section>
+        {% endif %}
+      </div>
     </div>
   </div>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p><small><em>von <a href="https://gildedernacht.ch/">Gilde der Nacht</a> | Version 2022-2 | Zuletzt angepasst:
+            {{timestamp}}</em></small></p>
+    </div>
+  </footer>
 </body>
 
 </html>

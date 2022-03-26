@@ -10,5 +10,9 @@ module.exports = {
       return `${path ?? ""}${page.fileSlug ?? "index"}.html`;
     },
     title: ({ page, title }) => title || page.fileSlug.toUpperCase(),
+    timestamp: () => {
+      const now = new Date();
+      return `${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()}`;
+    }
   }
 }
