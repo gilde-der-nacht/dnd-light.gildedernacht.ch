@@ -10,11 +10,54 @@ eleventyComputed:
 
 <h1>{{ charakter[id].klasse }}</h1>
 
-{{ charakter[id] | dump }}
+<p>Charaktername: ___</p>
+
+<p>vorschläge für namen: {{ charakter[id].namensVorschlaege }}</p>
+
+<p>volk: {{ charakter[id].volk }}</p>
+<p>klasse: {{ charakter[id].klasse }}</p>
+<p>ruestung: {{ charakter[id].generell.ruestung }}</p>
+<p>lebenspunkte: {{ charakter[id].generell.lebenspunkte }}</p>
+<p>initiative: {{ charakter[id].generell.initiative }}</p>
+<p>uebung: {{ charakter[id].generell.uebung }}</p>
+
+<p>rüstung: ein angriff des feindes, bla bla<p>
+<p>lp: wenn die lebenspunkte, bla bla</p>
+
+<p>Beschreibe dein Charakter in einem Adjektiv: ___</p>
+
+<style>
+.underline {
+    text-decoration: underline;
+}
+</style>
+
+{% for attributId, attribut in charakter[id].attribute %}
+<h2>{{ attributId }}</h2>
+    {% for fertigkeitId, fertigkeit in attribut %}
+        {% if fertigkeitId != "basis" %}
+        <p class="{{ "underline" if fertigkeit }}">{{ fertigkeitId }} {{ attribut.basis + (2 if fertigkeit else 0) }}</p>
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+
+<p>linker rand lebenspunkte ca. 0-20</p>
+<p>rechter rand anzahl zauber: ca. 0-5</p>
+
+<p>
+würfelprobe, wenn dein char, bla bla
+</p>
+
 <ul>
-{% for karte in karten %}
-    {% if karte.charakterTag === id %}
-        <li>{{ karte | dump }}</li>
-    {% endif %}
+{% for charakterKarteTitel in charakter[id].karten %}
+    {% for karte in karten %}
+        {% if karte.titel === charakterKarteTitel %}
+            <li>{{ karte | dump }}</li>
+        {% endif %}
+    {% endfor %}
 {% endfor %}
 </ul>
+
+<code>
+{{ charakter[id] | dump }}
+</code>

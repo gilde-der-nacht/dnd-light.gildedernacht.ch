@@ -2,6 +2,11 @@
     "id": "kleriker",
     "volk": "Mensch",
     "klasse": "Kleriker",
+    "namensVorschlaege": [
+        "alpha",
+        "beta",
+        "gamma"
+    ],
     "generell": {
         "ruestung": 16,
         "lebenspunkte": 10,
@@ -45,5 +50,14 @@
             "taeuschen": false,
             "ueberzeugen": false
         }
-    }
+    },
+    "karten": [
+        "Erzfeind: Humanoide",
+        "Streitkolben",
+        "Göttliche Führung",
+        "Heilige Flamme",
+        "Domäne des Lichts: Wunde Heilen",
+        "Segnen",
+        "Schild des Glaubens"
+    ]
 }
