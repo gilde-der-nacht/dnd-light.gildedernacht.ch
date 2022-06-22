@@ -1,21 +1,26 @@
-{
-    "id": "kaempfer",
-    "volk": "Drachenblütige (Bronze)",
-    "klasse": "Kämpfer",
+module.exports = {
+    "id": "kleriker",
+    "volk": "Mensch",
+    "klasse": "Kleriker",
+    "namensVorschlaege": [
+        "alpha",
+        "beta",
+        "gamma"
+    ],
     "generell": {
         "ruestung": 16,
-        "lebenspunkte": 12,
-        "initiative": 1,
+        "lebenspunkte": 10,
+        "initiative": -1,
         "uebung": 2
     },
     "attribute": {
         "sta": {
-            "basis": 3,
+            "basis": 2,
             "athletik": false
         },
         "ges": {
-            "basis": 1,
-            "akrobatik": true,
+            "basis": -1,
+            "akrobatik": false,
             "fingerfertigkeit": false,
             "heimlichkeit": false
         },
@@ -23,27 +28,36 @@
             "basis": 2
         },
         "int": {
-            "basis": -1,
+            "basis": 0,
             "arkaneKunde": false,
             "geschichte": false,
             "nachforschungen": false,
             "naturkunde": false,
-            "religion": false
+            "religion": true
         },
         "wei": {
-            "basis": 0,
+            "basis": 3,
             "heilkunde": false,
             "mitTierenUmgehen": false,
-            "motivErkennen": false,
+            "motivErkennen": true,
             "ueberlebenskunst": false,
             "wahrnehmung": false
         },
         "char": {
-            "basis": 2,
+            "basis": 1,
             "auftreten": false,
-            "einschuechtern": true,
+            "einschuechtern": false,
             "taeuschen": false,
             "ueberzeugen": false
         }
-    }
-}
+    },
+    "karten": [
+        "Erzfeind: Humanoide",
+        "Streitkolben",
+        "Göttliche Führung",
+        "Heilige Flamme",
+        "Domäne des Lichts: Wunde Heilen",
+        "Segnen",
+        "Schild des Glaubens"
+    ]
+};

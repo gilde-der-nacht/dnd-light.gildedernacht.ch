@@ -1,4 +1,4 @@
-{
+module.exports = {
     "id": "magier",
     "volk": "Felsengnom",
     "klasse": "Magier",
@@ -46,4 +46,4 @@
             "ueberzeugen": false
         }
     }
-}
+};

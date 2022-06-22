@@ -1,21 +1,21 @@
-{
-    "id": "druide",
-    "volk": "Hügelzwerg",
-    "klasse": "Druide",
+module.exports = {
+    "id": "kaempfer",
+    "volk": "Drachenblütige (Bronze)",
+    "klasse": "Kämpfer",
     "generell": {
-        "ruestung": 13,
-        "lebenspunkte": 11,
-        "initiative": -1,
+        "ruestung": 16,
+        "lebenspunkte": 12,
+        "initiative": 1,
         "uebung": 2
     },
     "attribute": {
         "sta": {
-            "basis": 2,
+            "basis": 3,
             "athletik": false
         },
         "ges": {
-            "basis": -1,
-            "akrobatik": false,
+            "basis": 1,
+            "akrobatik": true,
             "fingerfertigkeit": false,
             "heimlichkeit": false
         },
@@ -23,7 +23,7 @@
             "basis": 2
         },
         "int": {
-            "basis": 1,
+            "basis": -1,
             "arkaneKunde": false,
             "geschichte": false,
             "nachforschungen": false,
@@ -31,19 +31,19 @@
             "religion": false
         },
         "wei": {
-            "basis": 3,
-            "heilkunde": true,
-            "mitTierenUmgehen": true,
+            "basis": 0,
+            "heilkunde": false,
+            "mitTierenUmgehen": false,
             "motivErkennen": false,
             "ueberlebenskunst": false,
             "wahrnehmung": false
         },
         "char": {
-            "basis": 0,
+            "basis": 2,
             "auftreten": false,
-            "einschuechtern": false,
+            "einschuechtern": true,
             "taeuschen": false,
             "ueberzeugen": false
         }
     }
-}
+};

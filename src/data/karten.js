@@ -1,4 +1,4 @@
-[
+module.exports = [
     {
         "titel": "Dunkelsicht",
         "quantitaet": 0,
@@ -251,4 +251,4 @@
         "beschreibung": "Du lässt dich selbst - inklusive deiner Kleidung, Rüstung, Waffen und anderen Besitztümer an deiner Person - anders aussehen. Maximal bis zu einer Stunde oder bis du deine Aktion verwendest, um ihn aufzuheben. Du kannst deinen grundlegenden Körpertyp nicht ändern, also musst du eine Gestalt annehmen, die die gleiche grundsätzliche Anordnung von Gliedmassen hat.",
         "charakterTag": "zauberer"
     }
-]
+];

@@ -1,11 +1,11 @@
-{
-    "id": "zauberer",
-    "volk": "Tiefling",
-    "klasse": "Zauberer",
+module.exports = {
+    "id": "waldlaeufer",
+    "volk": "Waldelf",
+    "klasse": "Waldläufer",
     "generell": {
-        "ruestung": 12,
-        "lebenspunkte": 8,
-        "initiative": 2,
+        "ruestung": 15,
+        "lebenspunkte": 12,
+        "initiative": 3,
         "uebung": 2
     },
     "attribute": {
@@ -14,36 +14,36 @@
             "athletik": false
         },
         "ges": {
-            "basis": 2,
+            "basis": 3,
             "akrobatik": false,
             "fingerfertigkeit": false,
-            "heimlichkeit": false
+            "heimlichkeit": true
         },
         "kon": {
             "basis": 2
         },
         "int": {
-            "basis": -1,
+            "basis": 0,
             "arkaneKunde": false,
             "geschichte": false,
-            "nachforschungen": false,
+            "nachforschungen": true,
             "naturkunde": false,
             "religion": false
         },
         "wei": {
-            "basis": 0,
-            "heilkunde": false,
+            "basis": 2,
+            "heilkunde": true,
             "mitTierenUmgehen": false,
             "motivErkennen": false,
             "ueberlebenskunst": false,
-            "wahrnehmung": false
+            "wahrnehmung": true
         },
         "char": {
-            "basis": 3,
+            "basis": -1,
             "auftreten": false,
             "einschuechtern": false,
-            "taeuschen": true,
-            "ueberzeugen": true
+            "taeuschen": false,
+            "ueberzeugen": false
         }
     }
-}
+};

@@ -1,25 +1,20 @@
-{
-    "id": "kleriker",
-    "volk": "Mensch",
-    "klasse": "Kleriker",
-    "namensVorschlaege": [
-        "alpha",
-        "beta",
-        "gamma"
-    ],
+module.exports = {
+    "id": "zauberer",
+    "volk": "Tiefling",
+    "klasse": "Zauberer",
     "generell": {
-        "ruestung": 16,
-        "lebenspunkte": 10,
-        "initiative": -1,
+        "ruestung": 12,
+        "lebenspunkte": 8,
+        "initiative": 2,
         "uebung": 2
     },
     "attribute": {
         "sta": {
-            "basis": 2,
+            "basis": 1,
             "athletik": false
         },
         "ges": {
-            "basis": -1,
+            "basis": 2,
             "akrobatik": false,
             "fingerfertigkeit": false,
             "heimlichkeit": false
@@ -28,36 +23,27 @@
             "basis": 2
         },
         "int": {
-            "basis": 0,
+            "basis": -1,
             "arkaneKunde": false,
             "geschichte": false,
             "nachforschungen": false,
             "naturkunde": false,
-            "religion": true
+            "religion": false
         },
         "wei": {
-            "basis": 3,
+            "basis": 0,
             "heilkunde": false,
             "mitTierenUmgehen": false,
-            "motivErkennen": true,
+            "motivErkennen": false,
             "ueberlebenskunst": false,
             "wahrnehmung": false
         },
         "char": {
-            "basis": 1,
+            "basis": 3,
             "auftreten": false,
             "einschuechtern": false,
-            "taeuschen": false,
-            "ueberzeugen": false
+            "taeuschen": true,
+            "ueberzeugen": true
         }
-    },
-    "karten": [
-        "Erzfeind: Humanoide",
-        "Streitkolben",
-        "Göttliche Führung",
-        "Heilige Flamme",
-        "Domäne des Lichts: Wunde Heilen",
-        "Segnen",
-        "Schild des Glaubens"
-    ]
-}
+    }
+};

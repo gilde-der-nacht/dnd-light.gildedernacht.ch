@@ -1,4 +1,4 @@
-{
+module.exports = {
     "id": "barbar",
     "volk": "Halbork",
     "klasse": "Barbar",
@@ -46,4 +46,4 @@
             "ueberzeugen": false
         }
     }
-}
+};
