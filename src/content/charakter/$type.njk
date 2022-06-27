@@ -24,7 +24,13 @@ eleventyComputed:
 <p>rüstung: ein angriff des feindes, bla bla<p>
 <p>lp: wenn die lebenspunkte, bla bla</p>
 
-<!-- adjektiv weglassen, name reicht und später kommt auch noch ein gegenstand der erfunden werden muss -->
+<!-- adjektiv gemäss dem blatt weglassen, name reicht und später kommt auch noch ein gegenstand der erfunden werden muss -->
+
+<p>
+würfelprobe, wenn dein char, bla bla, text vom ausgedrucken blatt
+</p>
+
+<h2>Attribute</h2>
 
 <style>
 .underline {
@@ -33,7 +39,7 @@ eleventyComputed:
 </style>
 
 {% for attributId, attribut in charakter[id].attribute %}
-<h2>{{ attributId }}</h2>
+<h3>{{ attributId }}</h3>
     {% for fertigkeitId, fertigkeit in attribut %}
         {% if fertigkeitId != "basis" %}
         <p class="{{ "underline" if fertigkeit }}">{{ fertigkeitId }} {{ attribut.basis + (2 if fertigkeit else 0) }}</p>
@@ -44,17 +50,19 @@ eleventyComputed:
 <p>linker rand lebenspunkte ca. 0-20</p>
 <p>rechter rand anzahl zauber: ca. 0-5</p>
 
-<p>
-würfelprobe, wenn dein char, bla bla
-</p>
+<h2>Karten</h2>
 
 <ul>
-{% for charakterKarteTitel in charakter[id].karten %}
-    {% for karte in karten %}
-        {% if karte.titel === charakterKarteTitel %}
-            <li>{{ karte | dump }}</li>
-        {% endif %}
-    {% endfor %}
+{% for karte in karten %}
+    {% if karte.charakterTag === id %}
+    <li>
+        <ul>
+            <li>Titel: {{ karte.titel }}</li>
+            <li>Quantität: {{ "∞" if karte.quantitaet === (1 / 0) else karte.quantitaet }}</li>
+            <li>Beschreibung: {{ karte.beschreibung }}</li>
+        </ul>
+    </li>
+    {% endif %}
 {% endfor %}
 </ul>
 

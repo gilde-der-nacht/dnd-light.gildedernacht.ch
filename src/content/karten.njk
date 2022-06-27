@@ -3,7 +3,11 @@
 <ul role="list">
     {%- for karte in karten -%}
     <li>
-        {{ karte | dump }}
+        <ul>
+            <li>Titel: {{ karte.titel }}</li>
+            <li>Quantität: {{ "∞" if karte.quantitaet === (1 / 0) else karte.quantitaet }}</li>
+            <li>Beschreibung: {{ karte.beschreibung }}</li>
+        </ul>
     </li>
     {%- endfor -%}
 </ul>
