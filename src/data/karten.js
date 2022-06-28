@@ -2,25 +2,25 @@ module.exports = [
     {
         titel: "Dunkelsicht",
         quantitaet: Infinity,
-        beschreibung: "Da du an zwielichtige Wälder und den Nachthimmel gewöhnt bist, besitzt du überlegene Sicht sowohl in Dunkelheit als auch in dämmrigem Licht. Du kannst dämmriges Licht im Umkreis von 18 m so behandeln, als wäre es helles Licht. Dunkelheit wird im Umkreis von 18 m wie dämmriges Licht behandelt. Allerdings kannst du im Dunkeln keine Farben erkennen, nur Graustufen.",
+        beschreibung: "Da du an zwielichtige Wälder und den Nachthimmel gewöhnt bist, besitzt du überlegene Sicht sowohl in Dunkelheit als auch in dämmrigem Licht. Du kannst dämmriges Licht im Umkreis von 18 Meter so behandeln, als wäre es helles Licht. Dunkelheit wird im Umkreis von 18 m wie dämmriges Licht behandelt. Allerdings kannst du im Dunkeln keine Farben erkennen, nur Graustufen.",
         charakterTag: "waldlaeufer"
     },
     {
         titel: "Deckmantel der Wildnis",
         quantitaet: Infinity,
-        beschreibung: "Du kannst versuchen, dich zu verstecken, obwohl du nur von Blattwerk, starkem Regen, fallendem Schnee, Nebel oder anderen natürlichen Phänomenen leicht verschleiert wirst.",
+        beschreibung: "Du kannst versuchen, dich zu verstecken, obwohl du nur von Blattwerk, starkem Regen, fallendem Schnee, Nebel oder anderen natürlichen Phänomenen leicht verschleiert wirst.", /* Wo ist der Vorteil? Sich vertstecken versuchen kann ja jeder zu jedem Zeitpunk */
         charakterTag: "waldlaeufer"
     },
     {
         titel: "Bevorzugtes Gelände: Küste",
         quantitaet: Infinity,
-        beschreibung: "Wenn du einen Wurf auf Weisheit oder Intelligenz im Zusammenhang mit deinem bevorzugten Gelände ablegen musst,erhältst du +2 auf deinen Wurf.",
+        beschreibung: "Wenn du einen Wurf auf Weisheit oder Intelligenz im Zusammenhang mit deinem bevorzugten Gelände ablegen musst, erhältst du +2 auf deinen Wurf.",
         charakterTag: "waldlaeufer"
     },
     {
         titel: "Langbogen + Kampfstil: Bogenschiessen",
         quantitaet: Infinity,
-        beschreibung: "Angriff: 1W20 + 7\nSchaden: 1W8 + 3\nReichweite: 45m (180m mit Nachteil)",
+        beschreibung: "Angriff: 1W20 + 7\nSchaden: 1W8 + 3\nReichweite: 45 Meter (180 Meter mit Nachteil)",
         charakterTag: "waldlaeufer"
     },
     {
@@ -44,31 +44,31 @@ module.exports = [
     {
         titel: "Göttliche Führung",
         quantitaet: Infinity,
-        beschreibung: "Du berührst eine bereitwillige Kreatur. Einmal innerhalb der nächsten Minute, kann das Ziel 1W4 würfeln und das Ergebnis auf einen Attributswurf seiner Wahl addieren. Es kann den Würfel vor oder nach dem Attributswurf werfen. Dann endet der Zauber.",
+        beschreibung: "Du berührst eine bereitwillige Kreatur (z.B. einen deiner Kameraden). Einmal innerhalb der nächsten Minute, kann das Ziel 1W4 würfeln und das Ergebnis auf einen Attributswurf seiner Wahl addieren. Es kann den Würfel vor oder nach dem Attributswurf werfen. Dann endet der Zauber.",
         charakterTag: "kleriker"
     },
     {
         titel: "Heilige Flamme",
         quantitaet: Infinity,
-        beschreibung: "Flammengleiches Licht senkt sich auf eine Kreatur innerhalb 18 Meter, die du sehen kannst, herab. Die Kreatur muss einen Geschicklichkeitsrettungswurf schaffen, sonst erleidet sie 1W8 Schaden.",
+        beschreibung: "Flammengleiches Licht senkt sich auf eine Kreatur innerhalb 18 Meter, zu der du direkten Sichtkontakt hast, herab. Die Kreatur muss einen Geschicklichkeitsrettungswurf schaffen, sonst erleidet sie 1W8 Schaden.",
         charakterTag: "kleriker"
     },
     {
         titel: "Domäne des Lichts: Wunde Heilen",
         quantitaet: 2,
-        beschreibung: "Eine Kreatur, die du berührst, erhält eine Anzahl von Lebenspunkte gleich 1W8 + 3 zurück. Der Zauber hat keine Auswirkungen auf Untote oder Konstrukte.",
+        beschreibung: "Eine Kreatur (z.B. einen deiner Kameraden), die du berührst, erhält eine Anzahl von Lebenspunkte gleich 1W8 + 3 zurück. Der Zauber hat keine Auswirkungen auf Untote oder Konstrukte.",
         charakterTag: "kleriker"
     },
     {
         titel: "Segnen",
         quantitaet: 2,
-        beschreibung: "Du segnest bis zu drei Kreaturen deiner Wahl in Reichweite. Immer wenn ein Ziel einen Angriffs- oder Rettungswurf macht für die nächste Minute, kann es einen W4 werfen und das Ergebnis auf den Angriffswurf oder Rettungswurf addieren.",
+        beschreibung: "Du segnest bis zu drei Kreaturen deiner Wahl in Reichweite. Immer wenn ein Ziel einen Angriffs- oder Rettungswurf macht für die nächste Minute, kann es einen W4 werfen und das Ergebnis auf den Angriffswurf oder Rettungswurf addieren.", /* Reichweite? */
         charakterTag: "kleriker"
     },
     {
         titel: "Schild des Glaubens",
         quantitaet: 2,
-        beschreibung: "Ein schimmerndes Feld erscheint und umhüllt eine Kreatur deiner Wahl innerhalb 18m. Es gewährt ihr für die nächsten 10 Minuten einen Bonus von +2 auf Rüstung.",
+        beschreibung: "Ein schimmerndes Feld erscheint und umhüllt eine Kreatur deiner Wahl innerhalb 18 Meter. Es gewährt ihr für die nächsten 10 Minuten einen Bonus von +2 auf Rüstung.",
         charakterTag: "kleriker"
     },
     {
@@ -80,7 +80,7 @@ module.exports = [
     {
         titel: "Dunkelsicht",
         quantitaet: Infinity,
-        beschreibung: "Das Leben unter Tage hat dazu geführt, dass Zwerge selbst bei schlechten Lichtverhältnissen hervorragend sehen können. Du kannst dämmriges Licht im Umkreis von 18 m so behandeln, als wäre es helles Licht. Dunkelheit wird im Umkreis von 18 m wie dämmriges Licht behandelt. Allerdings kannst du im Dunklen keine Farben erkennen, nur Graustufen.",
+        beschreibung: "Das Leben unter Tage hat dazu geführt, dass Zwerge selbst bei schlechten Lichtverhältnissen hervorragend sehen können. Du kannst dämmriges Licht im Umkreis von 18 Meter so behandeln, als wäre es helles Licht. Dunkelheit wird im Umkreis von 18 Meter wie dämmriges Licht behandelt. Allerdings kannst du im Dunklen keine Farben erkennen, nur Graustufen.",
         charakterTag: "druide"
     },
     {
@@ -92,13 +92,13 @@ module.exports = [
     {
         titel: "Druidenkunst",
         quantitaet: Infinity,
-        beschreibung: "Wähle einen der folgenden Effekte: Du kannst das Wetter der nächsten 24 Stunden vorhersagen. Oder du sorgst dafür, dass augenblicklich eine Blume erblüht. Oder du erschaffst fallende Blätter, einen Windhauch oder die Geräusche eines kleinen Tieres. Oder du kannst augenblicklich ein Feuer entzünden oder löschen.",
+        beschreibung: "Wähle einen der folgenden Effekte: 1. Du kannst das Wetter der nächsten 24 Stunden vorhersagen. 2. Du sorgst dafür, dass augenblicklich eine Blume erblüht. 3. Du erschaffst fallende Blätter, einen Windhauch oder die Geräusche eines kleinen Tieres. 4. Du kannst augenblicklich ein Feuer entzünden oder löschen.",
         charakterTag: "druide"
     },
     {
         titel: "Gute Beeren",
         quantitaet: 2,
-        beschreibung: "Bis zu zehn Beeren erscheinen in deiner Hand und werden für die Wirkungsdauer mit Magie erfüllt. Eine Kreatur kann eine Aktion verwenden, um eine Beere zu essen. Eine Beere zu essen stellt 1 Lebenspunkt wieder her, und die Beere bietet genug Nahrung, um eine Kreatur für einen Tag zu versorgen.",
+        beschreibung: "Bis zu zehn Beeren erscheinen in deiner Hand und werden für die Wirkungsdauer mit Magie erfüllt. Eine Kreatur kann eine Aktion verwenden, um eine Beere zu essen. Eine Beere zu essen stellt 1 Lebenspunkt wieder her, und die Beere bietet genug Nahrung, um eine Kreatur (z.B. einen deiner Kameraden) für einen Tag zu versorgen.",
         charakterTag: "druide"
     },
     {
@@ -116,19 +116,19 @@ module.exports = [
     {
         titel: "Leichte Armbrust",
         quantitaet: Infinity,
-        beschreibung: "Angriff: 1W20 + 3\nSchaden: 1W8 + 1\nReichweite: 24m (96m mit Nachteil)",
+        beschreibung: "Angriff: 1W20 + 3\nSchaden: 1W8 + 1\nReichweite: 24 Meter (96 Meter mit Nachteil)",
         charakterTag: "kaempfer"
     },
     {
         titel: "Schadensresistenz: Blitz",
         quantitaet: Infinity,
-        beschreibung: "Du hast eine Resistenz gegen die Schadensart Blitz. (Blitzschaden wird dir gegenüber halbiert)",
+        beschreibung: "Du hast eine Resistenz gegen die Schadensart Blitz. Blitzschaden wird dir gegenüber halbiert.",
         charakterTag: "kaempfer"
     },
     {
         titel: "Odemwaffe: Blitz",
         quantitaet: 2,
-        beschreibung: "Du kannst deine Aktion verwenden, um einen Blitz zu speien. Wenn du deine Odemwaffe einsetzt, muss jede Kreatur in einer Linie von 9m von dir weg einen Geschicklichkeitsrettungswurf ablegen (Schwierigkeitsgrad 12). Eine Kreatur erleidet 2W6 Schaden bei einem missglückten Rettungswurf und die Hälfte bei einem Erfolg.",
+        beschreibung: "Du kannst deine Aktion verwenden, um einen Blitz zu speien. Wenn du deine Odemwaffe einsetzt, muss jede Kreatur in einer Linie von 9 Meter von dir weg einen Geschicklichkeitsrettungswurf ablegen (Schwierigkeitsgrad 12). Eine Kreatur erleidet 2W6 Schaden bei einem missglückten Rettungswurf und die Hälfte bei einem Erfolg.",
         charakterTag: "kaempfer"
     },
     {
@@ -140,13 +140,13 @@ module.exports = [
     {
         titel: "Kletterausrüstung",
         quantitaet: Infinity,
-        beschreibung: "Eine Kletterausrüstung beinhaltet spezielle Felshaken, Steigeisen, Handschuhe und einen Klettergurt. Du kannst eine Aktion verwenden, um dich zu verankern. Wenn du das tust, kannst du von dem Punkt, an dem du dich verankert hast, nicht weiter als 7,50 m fallen.",
+        beschreibung: "Eine Kletterausrüstung beinhaltet spezielle Felshaken, Steigeisen, Handschuhe und einen Klettergurt. Du kannst eine Aktion verwenden, um dich zu verankern. Wenn du das tust, kannst du von dem Punkt, an dem du dich verankert hast, nicht weiter als 7 1/2 Meter fallen.",
         charakterTag: "kaempfer"
     },
     {
         titel: "Dolch",
         quantitaet: Infinity,
-        beschreibung: "Angriff: 1W20 + 3\nSchaden: 1W4 + 1\nReichweite: 6m (18m mit Nachteil)",
+        beschreibung: "Angriff: 1W20 + 3\nSchaden: 1W4 + 1\nReichweite: 6 Meter (18 Meter mit Nachteil)",
         charakterTag: "magier"
     },
     {
@@ -188,7 +188,7 @@ module.exports = [
     {
         titel: "Wurfspeere",
         quantitaet: Infinity,
-        beschreibung: "Angriff: 1W20 + 3\nSchaden: 1W6 + 1\nReichweite: 9m (36m mit Nachteil)",
+        beschreibung: "Angriff: 1W20 + 3\nSchaden: 1W6 + 1\nReichweite: 9 Meter (36 Meter mit Nachteil)",
         charakterTag: "barbar"
     },
     {
@@ -212,13 +212,13 @@ module.exports = [
     {
         titel: "Dunkelsicht",
         quantitaet: Infinity,
-        beschreibung: "Dank deines orkischen Bluts besitzt du hervorragende Sicht in der Dunkelheit und in dämmrigem Licht. Du kannst im dämmrigen Licht 18 m weit sehen, als wäre es helles Licht, in Dunkelheit, als wäre es dämmriges Licht. Du kannst in der Dunkelheit keine Farben erkennen, nur unterschiedliche Graustufen.",
+        beschreibung: "Dank deines orkischen Bluts besitzt du hervorragende Sicht in der Dunkelheit und in dämmrigem Licht. Du kannst im dämmrigen Licht 18 Meter weit sehen, als wäre es helles Licht, in Dunkelheit, als wäre es dämmriges Licht. Du kannst in der Dunkelheit keine Farben erkennen, nur unterschiedliche Graustufen.",
         charakterTag: "barbar"
     },
     {
         titel: "Dolch",
         quantitaet: Infinity,
-        beschreibung: "Angriff: 1W20 + 5\nSchaden: 1W4 + 3\nReichweite: 6m (18m mit Nachteil)",
+        beschreibung: "Angriff: 1W20 + 5\nSchaden: 1W4 + 3\nReichweite: 6 Meter (18 Meter mit Nachteil)",
         charakterTag: "zauberer"
     },
     {
@@ -230,19 +230,19 @@ module.exports = [
     {
         titel: "Feuerpfeil",
         quantitaet: Infinity,
-        beschreibung: "Du schleuderst einen Splitter aus Feuer auf eine Kreatur innerhalb 36 Metern. Lege einen Fernkampf-Zauberangriff (1W20 + 5) gegen das Ziel ab. Bei einem Treffer erleidet das Ziel 1W10 Schaden. Ein brennbarer Gegenstand, der von diesem Zauber getroffen wird, geht ihn Flammen auf wenn er nicht getragen oder in der Hand gehalten wird.",
+        beschreibung: "Du schleuderst einen Splitter aus Feuer auf eine Kreatur innerhalb 36 Metern. Lege einen Fernkampf-Zauberangriff (1W20 + 5) gegen das Ziel ab. Bei einem Treffer erleidet das Ziel 1W10 Schaden. Ein brennbarer Gegenstand, der von diesem Zauber getroffen wird, geht ihn Flammen auf wenn er nicht getragen oder in der Hand gehalten wird.", /* wie funktioniert der auch auf RK? */
         charakterTag: "zauberer"
     },
     {
         titel: "Taschenspielerei",
         quantitaet: Infinity,
-        beschreibung: "Dieser Zauber ist ein kleinerer magischer Trick, den Zauberlehrlinge zum Üben verwenden. Beispiele: einen Funkenregen, einen Windhauch, schwache Musik, einen eigenartigen Geruch, ein kleines Feuer entzünden oder löschen, einen kleinen Gegenstand reinigen oder beschmutzen. Du kannst bis zu drei der  Effekte gleichzeitig aktiviert haben.",
+        beschreibung: "Dieser Zauber ist ein kleinerer magischer Trick, den Zauberlehrlinge zum Üben verwenden. Beispiele: einen Funkenregen, einen Windhauch, schwache Musik, einen eigenartigen Geruch, ein kleines Feuer entzünden oder löschen, einen kleinen Gegenstand reinigen oder beschmutzen. Du kannst bis zu drei der Effekte gleichzeitig aktiviert haben.",
         charakterTag: "zauberer"
     },
     {
         titel: "Magisches Geschoss",
         quantitaet: 2,
-        beschreibung: "Du erschaffst drei leuchtende Pfeile aus magischer Energie. Jeder Pfeil trifft eine Kreatur deiner Wahl in Reichweite, die du sehen kannst. Ein Pfeil fügt dem Ziel 1W4+1 Schaden zu. Die Pfeile schlagen alle gleichzeitig ein und du kannst sie auf eine oder mehrere Kreaturen losschicken.",
+        beschreibung: "Du erschaffst drei leuchtende Pfeile aus magischer Energie. Jeder Pfeil trifft eine Kreatur deiner Wahl in Reichweite, die du sehen kannst. Ein Pfeil fügt dem Ziel 1W4 + 1 Schaden zu. Die Pfeile schlagen alle gleichzeitig ein und du kannst sie auf eine oder mehrere Kreaturen losschicken.",
         charakterTag: "zauberer"
     },
     {
