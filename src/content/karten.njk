@@ -8,6 +8,7 @@
             <li>Quantität: {{ "∞" if karte.quantitaet === (1 / 0) else karte.quantitaet }}</li>
             <li>Beschreibung: {{ karte.beschreibung }}</li>
             <li>Char: {{ karte.charakterTag }}</li>
+            <li class="tags">{{ karte.tags }}</li>
         </ul>
     </li>
     {%- endfor -%}
