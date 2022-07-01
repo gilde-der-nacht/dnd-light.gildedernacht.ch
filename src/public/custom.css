@@ -57,11 +57,21 @@ a {
   text-decoration: underline;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .tags {
   font-size: 200%;
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+.inputBox {
+  border: 1px solid hsl(var(--clr-challenge));
+  padding: 2rem 1rem 0.5rem;
+  font-style: italic;
 }
 
 .custom-grid {
@@ -73,6 +83,39 @@ a {
 
 .custom-grid > * {
   margin: 0 !important;
+}
+
+.customTags {
+  padding: 0 !important;
+  margin: 0 !important;
+  list-style: none !important;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.customTags li {
+  margin: 0 !important;
+}
+
+.customTag {
+  font-size: 0.9rem;
+  padding: 0.25rem 1rem;
+  background-color: hsl(var(--clr-challenge));
+  border: 1px solid hsl(var(--clr-challenge));
+  color: white;
+  border-radius: 1rem;
+}
+
+.customTag strong {
+  color: inherit;
+}
+
+.custom-flex {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .only-for-print {

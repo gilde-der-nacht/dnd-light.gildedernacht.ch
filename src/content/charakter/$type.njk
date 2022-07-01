@@ -7,65 +7,121 @@ permalink: "charakter/{{ id | slug }}.html"
 eleventyComputed:
     title: "{{ charakter[id].class }}"
 ---
+<div style="position: relative;">
+    <ul role="list" class="customTags" style="position: absolute; right: 0;">
+        <li class="customTag">Volk: <strong>{{ charakter[id].volk }}</strong></li>
+        <li class="customTag">Klasse: <strong>{{ charakter[id].klasse }}</strong></li>
+    </ul>
+</div>
+<h1>{{ charakter[id].volk }} {{ charakter[id].klasse }}</h1>
 
-<h1>{{ charakter[id].klasse }}</h1>
+<p class="inputBox">Charaktername</p>
 
-<p>Charaktername: ___</p>
+<!-- <p>vorschläge für namen: {{ charakter[id].namensVorschlaege }}</p> -->
 
-<p>vorschläge für namen: {{ charakter[id].namensVorschlaege }}</p>
 
-<p>volk: {{ charakter[id].volk }}</p>
-<p>klasse: {{ charakter[id].klasse }}</p>
-<p>ruestung: {{ charakter[id].generell.ruestung }}</p>
-<p>lebenspunkte: {{ charakter[id].generell.lebenspunkte }}</p>
-<p>initiative: {{ charakter[id].generell.initiative }}</p>
-<p>uebung: {{ charakter[id].generell.uebung }}</p>
+<ul role="list" class="customTags">
+    <li class="customTag">Lebenspunkte: <strong>{{ charakter[id].generell.lebenspunkte }}</strong></li>
+    <li class="customTag">Rüstung: <strong>{{ charakter[id].generell.ruestung }}</strong></li>
+    <li class="customTag">Initiative: <strong>{{ charakter[id].generell.initiative }}</strong></li>
+</ul>
 
-<p>rüstung: ein angriff des feindes, bla bla<p>
-<p>lp: wenn die lebenspunkte, bla bla</p>
+<!-- <p>uebung: {{ charakter[id].generell.uebung }}</p> -->
+
+<!-- <p>rüstung: ein angriff des feindes, bla bla
+<p>
+<p>lp: wenn die lebenspunkte, bla bla</p> -->
 
 <!-- adjektiv gemäss dem blatt weglassen, name reicht und später kommt auch noch ein gegenstand der erfunden werden muss -->
 
-<p>
-würfelprobe, wenn dein char, bla bla, text vom ausgedrucken blatt
-</p>
+<!-- <p>
+    würfelprobe, wenn dein char, bla bla, text vom ausgedrucken blatt
+</p> -->
 
 <h2>Attribute</h2>
 
-<style>
-.underline {
-    text-decoration: underline;
-}
-</style>
-
-{% for attributId, attribut in charakter[id].attribute %}
-<h3>{{ attributId }}</h3>
-    {% for fertigkeitId, fertigkeit in attribut %}
-        {% if fertigkeitId != "basis" %}
-        <p class="{{ "underline" if fertigkeit }}">{{ fertigkeitId }} {{ attribut.basis + (2 if fertigkeit else 0) }}</p>
+<ul role="list" class="custom-grid">
+    {% for attributId, attribut in charakter[id].attribute %}
+    <li class="box">
+        {% if attributId == "sta" %}
+        <h3>Stärke <span style="float: right;">{{ attribut.basis }}</span></h3>
+        {% elif attributId == "ges" %}
+        <h3>Geschicklichkeit <span style="float: right;">{{ attribut.basis }}</span></h3>
+        {% elif attributId == "kon" %}
+        <h3>Konstitution <span style="float: right;">{{ attribut.basis }}</span></h3>
+        {% elif attributId == "int" %}
+        <h3>Intelligenz <span style="float: right;">{{ attribut.basis }}</span></h3>
+        {% elif attributId == "wei" %}
+        <h3>Weisheit <span style="float: right;">{{ attribut.basis }}</span></h3>
+        {% elif attributId == "char" %}
+        <h3>Charisma <span style="float: right;">{{ attribut.basis }}</span></h3>
         {% endif %}
+        {% for fertigkeitId, fertigkeit in attribut %}
+        {% if fertigkeitId != "basis" %}
+        <p class="custom-flex"><span class="{{ "bold" if fertigkeit }}">
+        {% if fertigkeitId == "athletik" %}
+            Athletik
+        {% elif fertigkeitId == "akrobatik" %}
+            Akrobatik
+        {% elif fertigkeitId == "fingerfertigkeit" %}
+            Fingerfertigkeit
+        {% elif fertigkeitId == "heimlichkeit" %}
+            Heimlichkeit
+        {% elif fertigkeitId == "arkaneKunde" %}
+            Arkane Kunde
+        {% elif fertigkeitId == "geschichte" %}
+            Geschichte
+        {% elif fertigkeitId == "nachforschungen" %}
+            Nachforschungen
+        {% elif fertigkeitId == "naturkunde" %}
+            Naturkunde
+        {% elif fertigkeitId == "religion" %}
+            Religion
+        {% elif fertigkeitId == "heilkunde" %}
+            Heilkunde
+        {% elif fertigkeitId == "mitTierenUmgehen" %}
+            Mit Tieren Umgehen
+        {% elif fertigkeitId == "motivErkennen" %}
+            Motiv erkennen
+        {% elif fertigkeitId == "ueberlebenskunst" %}
+            Überlebenskunst
+        {% elif fertigkeitId == "wahrnehmung" %}
+            Wahrnehmung
+        {% elif fertigkeitId == "auftreten" %}
+            Auftreten
+        {% elif fertigkeitId == "einschuechtern" %}
+            Einschuechtern
+        {% elif fertigkeitId == "taeuschen" %}
+            Täuschen
+        {% elif fertigkeitId == "ueberzeugen" %}
+            Überzeugen
+        {% endif %}
+        </span> <span class="customTag"><strong>{{ attribut.basis + (2 if fertigkeit else 0) }}</strong></span>
+        </p>
+        {% endif %}
+        {% endfor %}
+    </li>
     {% endfor %}
-{% endfor %}
-
+</ul>
 <p>linker rand lebenspunkte ca. 0-20</p>
 <p>rechter rand anzahl zauber: ca. 0-5</p>
 
 <h2>Karten</h2>
 
-<ul>
-{% for karte in karten %}
+<ul role="list" class="custom-grid">
+    {% for karte in karten %}
     {% if karte.charakterTag === id %}
-    <li>
+    <li class="box print-no-break">
+        <h3>{{ karte.titel }}</h3>
         <ul>
-            <li>Titel: {{ karte.titel }}</li>
             <li>Quantität: {{ "∞" if karte.quantitaet === (1 / 0) else karte.quantitaet }}</li>
             <li>Beschreibung: {{ karte.beschreibung }}</li>
         </ul>
     </li>
     {% endif %}
-{% endfor %}
+    {% endfor %}
 </ul>
-
+<!--
 <code>
 {{ charakter[id] | dump }}
-</code>
+</code> -->
