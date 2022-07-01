@@ -1,0 +1,27 @@
+@media print {
+  body::before,
+  body::after {
+    content: "";
+    display: block;
+    position: fixed;
+    inset: 0.5rem;
+    pointer-events: none;
+  }
+
+  body > * {
+    padding-inline: 1rem;
+  }
+
+  body::before {
+    border-left: 0.25rem solid transparent;
+    border-color: hsl(var(--clr-example));
+  }
+  body::after {
+    border-right: 0.25rem solid transparent;
+    border-color: hsl(var(--clr-dialogue));
+  }
+
+  @page {
+    margin: 0.5cm 0.25cm;
+  }
+}

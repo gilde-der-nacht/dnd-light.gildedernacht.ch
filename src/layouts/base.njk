@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
   <link rel="stylesheet" href="/public/custom.css">
   <link rel="stylesheet" href="/public/print.css" media="print">
+  {% if isChar %}
+  <link rel="stylesheet" href="/public/custom-char.css">
+  {% endif %}
   <title>{{ title + ' | ' if title }}DND Light | Gilde der Nacht</title>
 </head>
 

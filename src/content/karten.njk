@@ -6,7 +6,7 @@
         <h3>{{ karte.titel }}</h3>
         <ul>
             <li>Quantität: {{ "∞" if karte.quantitaet === (1 / 0) else karte.quantitaet }}</li>
-            <li>Beschreibung: {{ karte.beschreibung }}</li>
+            <li><strong>Beschreibung</strong><br/>{{ karte.beschreibung }}</li>
         </ul>
         <div class="tags">{%- for tag in karte.tags -%}<span>{{tag}}</span>{%- endfor -%}</div>
     </li>

@@ -5,7 +5,8 @@ pagination:
     alias: id
 permalink: "charakter/{{ id | slug }}.html"
 eleventyComputed:
-    title: "{{ charakter[id].class }}"
+    title: "{{ charakter[id].klasse }}"
+isChar: true
 ---
 <div style="position: relative;">
     <ul role="list" class="customTags" style="position: absolute; right: 0;">
@@ -103,8 +104,8 @@ eleventyComputed:
     </li>
     {% endfor %}
 </ul>
-<p>linker rand lebenspunkte ca. 0-20</p>
-<p>rechter rand anzahl zauber: ca. 0-5</p>
+<!-- <p>linker rand lebenspunkte ca. 0-20</p>
+<p>rechter rand anzahl zauber: ca. 0-5</p> -->
 
 <h2>Karten</h2>
 
@@ -115,7 +116,7 @@ eleventyComputed:
         <h3>{{ karte.titel }}</h3>
         <ul>
             <li>Quantität: {{ "∞" if karte.quantitaet === (1 / 0) else karte.quantitaet }}</li>
-            <li>Beschreibung: {{ karte.beschreibung }}</li>
+            <li><strong>Beschreibung</strong><br/>{{ karte.beschreibung }}</li>
         </ul>
     </li>
     {% endif %}
