@@ -1,15 +1,14 @@
 <h1>Karten</h1>
 
-<ul role="list">
+<ul role="list" class="custom-grid">
     {%- for karte in karten -%}
-    <li>
+    <li class="box print-no-break">
+        <h3>{{ karte.titel }}</h3>
         <ul>
-            <li>Titel: {{ karte.titel }}</li>
             <li>Quantität: {{ "∞" if karte.quantitaet === (1 / 0) else karte.quantitaet }}</li>
             <li>Beschreibung: {{ karte.beschreibung }}</li>
-            <li>Char: {{ karte.charakterTag }}</li>
-            <li class="tags">{{ karte.tags }}</li>
         </ul>
+        <div class="tags">{%- for tag in karte.tags -%}<span>{{tag}}</span>{%- endfor -%}</div>
     </li>
     {%- endfor -%}
 </ul>

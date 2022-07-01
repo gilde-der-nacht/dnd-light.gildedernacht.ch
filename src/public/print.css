@@ -1,0 +1,24 @@
+@media print {
+  @page {
+    margin: 0.5cm;
+  }
+
+  img, .print-no-break {
+    display: block;
+    break-before: avoid;
+    break-inside: avoid;
+    break-after: avoid;
+  }
+
+  html {
+    font-size: 10pt !important;
+  }
+
+  .hide-in-print {
+    display: none;
+  }
+
+  .only-for-print {
+    display: unset;
+  }
+}

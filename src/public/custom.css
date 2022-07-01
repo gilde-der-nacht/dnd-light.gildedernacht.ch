@@ -1,0 +1,80 @@
+@import url(https://fonts.bunny.net/css?family=alegreya:400i);
+
+:root {
+  --clr-example: 189 85% 28%;
+  --clr-dialogue: 31 100% 45%;
+  --clr-challenge: 230 57% 50%;
+  --clr-action: 162 88% 26%;
+
+  --font-serif: "alegreya";
+}
+
+html {
+  font-size: calc(1rem + 0.3vw);
+}
+
+.content .example:not(:last-child),
+.content .dialogue:not(:last-child),
+.content .challenge:not(:last-child),
+.content img:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+.example,
+.dialogue,
+.challenge {
+  --box-border: hsl(var(--box-color));
+  --box-background: hsl(var(--box-color) / 0.3);
+  border-left: 0.5rem solid var(--box-border, transparent);
+  background: var(--box-background);
+  padding: 1rem;
+}
+
+.example {
+  --box-color: var(--clr-challenge);
+  font-style: italic;
+  font-family: var(--font-serif);
+}
+
+.dialogue {
+  --box-color: var(--clr-dialogue);
+  font-style: italic;
+  font-family: var(--font-serif);
+}
+
+.challenge {
+  --box-color: var(--clr-challenge);
+  font-weight: bold;
+}
+
+.action {
+  color: hsl(var(--clr-action));
+  font-weight: bold;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.tags {
+  font-size: 200%;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.custom-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+  gap: 1rem;
+  margin: 0 !important;
+}
+
+.custom-grid > * {
+  margin: 0 !important;
+}
+
+.only-for-print {
+  display: none;
+}

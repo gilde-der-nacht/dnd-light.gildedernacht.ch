@@ -6,66 +6,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="/public/custom.css">
+  <link rel="stylesheet" href="/public/print.css" media="print">
   <title>{{ title + ' | ' if title }}DND Light | Gilde der Nacht</title>
-  <style>
-
-body {
-  font-size: 120%;
-}
-
-<!-- just ugly examples -->
-
-.example {
-  border: 1px solid #99f;
-  border-radius: 5px;
-  background: #eef;
-  padding: 5px;
-}
-
-.dialogue {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-left: 5px solid #9f9;
-  background: #efe;
-  padding: 5px;
-}
-
-.challenge {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-left: 5px solid #f99;
-  background: #fee;
-  padding: 5px;
-}
-
-a {
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-/* just to see a difference between h2 and h3, can be removed later */
-.content h3 {
-  font-size: 100%;
-}
-
-.action {
-  color: blue;
-}
-
-.tags {
-  font-size: 200%;
-}
-
-
-  </style>
 </head>
 
 <body style="min-height: 100vh; display: grid; grid-template-rows: 1fr max-content;">
   <div>
+    <footer class="footer only-for-print">
+      <p><strong>DND Light</strong> verfügbar unter <a
+          href="https://dnd-light.gildedernacht.ch/">dnd-light.gildedernacht.ch</a></p>
+      <p><small><em>von Gilde der Nacht (<a href="https://gildedernacht.ch/">www.gildedernacht.ch</a>) | Version 2022-2
+            | Zuletzt angepasst:
+            {{timestamp}}</em></small></p>
+    </footer>
     <div class="container">
       <div class="content">
         {% if page.filePathStem !== "/index" %}
-        <section class="section">
+        <section class="section hide-in-print">
           <a href="/">
             <- Startseite</a>
         </section>
@@ -74,7 +32,7 @@ a {
           {{ content | safe }}
         </section>
         {% if page.filePathStem !== "/index" %}
-        <section class="section">
+        <section class="section hide-in-print">
           <a href="/">
             <- Startseite</a>
         </section>
@@ -82,7 +40,14 @@ a {
       </div>
     </div>
   </div>
-  <footer class="footer">
+  <footer class="footer only-for-print">
+    <p><strong>DND Light</strong> verfügbar unter <a
+        href="https://dnd-light.gildedernacht.ch/">dnd-light.gildedernacht.ch</a></p>
+    <p><small><em>von Gilde der Nacht (<a href="https://gildedernacht.ch/">www.gildedernacht.ch</a>) | Version 2022-2 |
+          Zuletzt angepasst:
+          {{timestamp}}</em></small></p>
+  </footer>
+  <footer class="footer hide-in-print">
     <div class="content has-text-centered">
       <p><small><em>von <a href="https://gildedernacht.ch/">Gilde der Nacht</a> | Version 2022-2 | Zuletzt angepasst:
             {{timestamp}}</em></small></p>
